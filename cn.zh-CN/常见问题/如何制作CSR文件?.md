@@ -2,13 +2,13 @@
 
 在申请数字证书之前，您必须先生成证书私钥和证书请求文件（Cerificate Signing Request，简称 CSR）。CSR文件是您的公钥证书原始文件，包含了您的服务器信息和您的单位信息，需要提交给CA认证中心进行审核。
 
-**Note:** 建议您使用系统提供的系统创建CSR功能，避免出现内容不正确而导致的审核失败。关于审核失败详细信息，请参考[审核失败 - 主域名不能为空](cn.zh-CN/常见问题/审核失败 - 主域名不能为空.md#)。
+**说明：** 建议您使用系统提供的系统创建CSR功能，避免出现内容不正确而导致的审核失败。关于审核失败详细信息，请参考[审核失败 - 主域名不能为空](cn.zh-CN/常见问题/审核失败 - 主域名不能为空.md#)。
 
 手动生成CSR文件的同时会生成私钥文件，请务必妥善保管和备份您的私钥。
 
 您手动生成CSR文件时，一般需要输入以下信息：
 
-**Note:** 输入的中文信息需要使用UTF8编码格式。
+**说明：** 输入的中文信息需要使用UTF8编码格式。
 
 -   Organization Name\(O\)： 申请单位名称法定名称，可以是中文或英文。
 -   Organization Unit\(OU\)： 申请单位的所在部门，可以是中文或英文。
@@ -17,7 +17,7 @@
 -   Locality\(L\)： 申请单位所在城市名，可以是中文或英文。
 -   Common Name\(CN\)： 申请SSL证书的具体网站域名。
 
-**Note:** 证书服务系统对CSR文件的密钥长度有严格要求，密钥长度必须是2,048位，密钥类型必须为RSA。如果申请证书是多域名或者通配子域名，在**Common Name**或**What is your first and last name?**字段只需要输入一个域名即可（通配子域名可以输入\*.example.com等）。
+**说明：** 证书服务系统对CSR文件的密钥长度有严格要求，密钥长度必须是2,048位，密钥类型必须为RSA。如果申请证书是多域名或者通配子域名，在**Common Name**或**What is your first and last name?**字段只需要输入一个域名即可（通配子域名可以输入\*.example.com等）。
 
 ## 使用OpenSSL工具生成CSR文件 {#section_x2y_3rv_ydb .section}
 
@@ -48,7 +48,7 @@
     完成命令提示的输入后，会在当前目录下生成myprivate.key（私钥文件）和 mydomain.csr（CSR，证书请求文件）两个文件。
 
 
-**Note:** 在使用OpenSSL工具生成中文证书时需要注意中文编码格式必须使用UTF8编码格式。同时，需要在编译OpenSSL工具时指定支持UTF8编码格式。
+**说明：** 在使用OpenSSL工具生成中文证书时需要注意中文编码格式必须使用UTF8编码格式。同时，需要在编译OpenSSL工具时指定支持UTF8编码格式。
 
 如果您需要输入中文信息，建议您使用Keytool工具生成CSR文件。
 
@@ -57,7 +57,7 @@
 1.  安装Keytool工具，Keytool工具一般包含在Java Development Kit（JDK）工具包中。
 2.  使用Keytool工具生成keystore证书文件。
 
-    **Note:** Keystore证书文件中包含密钥，导出密钥方式请参考[主流数字证书都有哪些格式](cn.zh-CN/常见问题/主流数字证书都有哪些格式？.md#)。
+    **说明：** Keystore证书文件中包含密钥，导出密钥方式请参考[主流数字证书都有哪些格式](cn.zh-CN/常见问题/主流数字证书都有哪些格式？.md#)。
 
     1.  执行命令`keytool -genkey -alias mycert -keyalg RSA -keysize 2048 -keystore ./mydomain.jks生成 keystore`证书文件。其中，
 
