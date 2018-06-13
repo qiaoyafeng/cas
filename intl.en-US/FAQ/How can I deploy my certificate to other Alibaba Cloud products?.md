@@ -14,7 +14,7 @@ If any problems occur when attempting to push a certificate, see [FAQs for pushi
 
 Follow these steps to first download the certificate locally, and then to deploy your digital certificate to other products:
 
-1.  Log on to the [Alibaba Cloud Certificates Service console](https://yundun.console.aliyun.com/?p=cas#/)[Alibaba Cloud Certificates Service console](https://partners-intl.console.aliyun.com/#/cas).
+1.  Log on to the [Alibaba Cloud Certificates Service console](https://yundun.console.aliyun.com/?p=cas#/).
 2.  In the My Certificates list, select the issued certificate and click **Download**.
 3.  Select **Nginx/Tengine**, and click **Download certificate for Nginx** to download the certificate in PEM format.
 4.  Once the certificate is successfully downloaded, you must upload and configure the certificate in the console of the corresponding cloud product.
