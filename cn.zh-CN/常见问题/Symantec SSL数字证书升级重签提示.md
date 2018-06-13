@@ -22,7 +22,9 @@
 
 -   对于受影响范围内的OV/EV类型的数字证书，CA认证中心的审核人员将通过电话与您联系，经确认后将重新为您签发新的数字证书。
 
-    **说明：** 如果您在[云盾证书服务管理控制台](https://yundun.console.aliyun.com/?&p=cas#/cas/home)中发现处于审核中状态的OV/EV类型证书订单，请您耐心等待CA中心审核人员的通知。
+    **说明：** 如果您在[云盾证书服务管理控制台](https://yundun.console.aliyun.com/?&p=cas#/cas/home)中发现处于审核中状态的OV/EV类型证书订单，请您耐心等待CA中心审核人员的通知。在您收到来自CA认证中心的签发申请确认邮件后，请仔细阅读邮件内容后单击**同意**或**Approve**确认。
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/14803/6352_zh-CN.png)
 
 -   对于受影响范围内的DV类型的数字证书，阿里云工作人员将为您提交证书重签申请，您需要在[云盾证书服务管理控制台](https://yundun.console.aliyun.com/?&p=cas#/cas/home)中根据进度提示完成域名验证操作。
 
