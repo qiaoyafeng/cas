@@ -24,7 +24,15 @@
 
     **说明：** 如果您在[云盾证书服务管理控制台](https://yundun.console.aliyun.com/?&p=cas#/cas/home)中发现处于审核中状态的OV/EV类型证书订单，请您耐心等待CA中心审核人员的通知。
 
--   对于受影响范围内的DV类型的数字证书，阿里云工作人员将为您提交证书重签申请，您需要在[云盾证书服务管理控制台](https://yundun.console.aliyun.com/?&p=cas#/cas/home)中根据进度提示完成相应的操作。
+-   对于受影响范围内的DV类型的数字证书，阿里云工作人员将为您提交证书重签申请，您需要在[云盾证书服务管理控制台](https://yundun.console.aliyun.com/?&p=cas#/cas/home)中根据进度提示完成域名验证操作。
+
+    **说明：** 如果您原先的DV型数字证书订单符合以下条件，系统将尝试自动添加DNS解析记录帮助您完成域名验证：
+
+    -   通过DNS方式完成域名验证
+    -   证书绑定的域名由云解析服务管理
+    -   已授权证书服务系统自动添加DNS解析记录
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/14803/6322_zh-CN.png)
+
 
 ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/14803/6321_zh-CN.png)
 
