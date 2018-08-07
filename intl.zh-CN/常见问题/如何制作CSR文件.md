@@ -1,6 +1,6 @@
 # 如何制作CSR文件 {#concept_b4f_mrp_ydb .concept}
 
-在申请数字证书之前，您必须先生成证书私钥和证书请求文件（Cerificate Signing Request，简称 CSR）。CSR文件是您的公钥证书原始文件，包含了您的服务器信息和您的单位信息，需要提交给CA认证中心进行审核。
+在申请数字证书之前，您必须先生成证书私钥和证书请求文件（Certificate Signing Request，简称 CSR）。CSR文件是您的公钥证书原始文件，包含了您的服务器信息和您的单位信息，需要提交给CA认证中心进行审核。
 
 **说明：** 建议您使用系统提供的系统创建CSR功能，避免出现内容不正确而导致的审核失败。关于审核失败详细信息，请参考[审核失败 - 主域名不能为空](intl.zh-CN/常见问题/审核失败 - 主域名不能为空.md#)。
 
@@ -30,7 +30,7 @@
     -   `-newkey rsa:2048` 指定私钥类型和长度。
 3.  生成CSR文件mydomain.csr。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13600/4272_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13600/15336127084272_zh-CN.png)
 
     需要输入的信息说明如下：
 
@@ -65,7 +65,7 @@
         -   `-keysize` 指定密钥长度为 2,048。
         -   `-alias` 指定证书别名，可自定义。
         -   `-keystore` 指定证书文件保存路径。
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13600/4273_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13600/15336127084273_zh-CN.png)
 
     2.  输入证书保护密码，然后根据下表依次输入所需信息：
 
