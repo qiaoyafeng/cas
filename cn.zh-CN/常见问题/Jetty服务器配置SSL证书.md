@@ -9,7 +9,7 @@
 
 3.  转换pfx的证书密匙对文件为jks格式，转换命令如下：
 
-    **Note:** Windows环境注意在%JAVA\_HOME%/jdk/bin目录下执行。
+    **说明：** Windows环境注意在%JAVA\_HOME%/jdk/bin目录下执行。
 
     ```
     keytool -importkeystore -srckeystore 密匙对文件.pfx -destkeystore 证书名称.jks -srcstoretype PKCS12 -deststoretype JKS

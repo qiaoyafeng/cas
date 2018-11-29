@@ -2,7 +2,7 @@
 
 自2017年1月1日起，根据苹果要求，所有iOS应用必须使用ATS（App Transport Security），即iOS应用内的连接必须使用安全的HTTPS连接。同时，苹果要求使用的不仅是一个简单的HTTPS协议连接，而且必须要满足iOS9中的新增特性。
 
-**Note:** 阿里云的CDN、SLB服务中的HTTPS配置完全符合ATS的要求。
+**说明：** 阿里云的CDN、SLB服务中的HTTPS配置完全符合ATS的要求。
 
 苹果ATS针对HTTPS协议包含四个方面的要求。
 
@@ -41,7 +41,7 @@
 -   IBM HTTP Server 8.0及以上版本支持TLSv1.2。根据ATS要求，建议使用IBM HTTP Server 8.5及以上版本。
 -   Weblogic 10.3.6及以上版本Web服务器需要使用Java7及以上版本来支持TLSv1.2。
 
-    **Note:** Weblogic 10.3.6中存在多个SHA256兼容问题，建议最低使用Weblogic 12版本，或为Weblogic 10.3.6配置前端Apache或Nginx的HTTPS代理或SSL前端负载。
+    **说明：** Weblogic 10.3.6中存在多个SHA256兼容问题，建议最低使用Weblogic 12版本，或为Weblogic 10.3.6配置前端Apache或Nginx的HTTPS代理或SSL前端负载。
 
 -   Webspere V7.0.0.23及以上版本、Webspere V8.0.0.3及以上版本、Webspere V8.5.0.0及以上版本支持 TLSv1.2。关于如何配置Webspere服务器支持TLSv1.2，请参考 [Configure websphere application server SSL protocol to TLSv1.2](https://developer.ibm.com/answers/questions/206952/how-do-i-configure-websphere-application-server-ss.html)。
 
@@ -65,7 +65,7 @@
 
 以下通过举例方式说明不同Web服务器的ATS协议及加密套件应该如何配置：
 
-**Note:** 示例中只列举了与ATS协议有关的属性，请不要完全复制以下配置用于您的实际环境。
+**说明：** 示例中只列举了与ATS协议有关的属性，请不要完全复制以下配置用于您的实际环境。
 
 **Nginx配置文件片段**
 

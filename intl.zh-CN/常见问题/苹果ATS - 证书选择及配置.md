@@ -8,7 +8,9 @@
 
 ## 证书颁发机构的要求 {#section_utf_wm5_ydb .section}
 
-建议您使用Entrust品牌的OV型及以上数字证书。
+-   建议您使用Symantec、GeoTrust品牌的OV型及以上数字证书。
+-   对于个人用户，建议使用DV型数字证书，不推荐使用免费证书。
+-   CFCA品牌的数字证书只在最新的苹果设备上才支持，因此不推荐选择CFCA品牌。
 
 ## 证书的哈希算法和密钥长度的要求 {#section_bvr_rm5_ydb .section}
 
