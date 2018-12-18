@@ -6,7 +6,7 @@
 
 申请证书时需要选择**系统自动创建CSR**。
 
-本文档证书名称以**domain name**为示例，如证书文件名称为**domain name\_public.cert**，证书秘钥文件名称为**domain name.key**。
+本文档证书名称以**domain name**为示例，如证书文件名称为**domain name.pem**，证书秘钥文件名称为**domain name.key**。
 
 ## 操作指南 {#section_ydh_4qb_1gb .section}
 
@@ -14,7 +14,7 @@
 2.  登录阿里云[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=casnext#/overview/cn-hangzhou)。
 3.  在SSL证书页面定位到需要下载的证书并单击证书卡片右下角的**下载**打开**证书下载**对话框。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/154512567033499_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/154512698533499_zh-CN.png)
 
 4.  在**证书下载**对话框中定位到Nginx/Tengine服务器，并单击右侧**操作**栏的**下载**将Nginx版证书压缩包下载到本地。
 5.  解压Nginx证书。
@@ -23,7 +23,7 @@
 
     -   证书文件（以.pem为后缀或文件类型）
     -   秘钥文件（以.key为后缀或文件类型）
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66002/154512567033690_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66002/154512698533690_zh-CN.png)
 
     **说明：** **.pem**扩展名的证书文件采用Base64-encoded的PEM格式文本文件，您可根据需要修改成其他扩展名。
 
@@ -62,7 +62,7 @@
     ssl_certificate cert/domain name.pem;   #将domain name.pem替换成您证书的文件名。
     ssl_certificate_key cert/domain name.key;   #将domain name.key替换成您证书的私钥文件名。
     ssl_session_timeout 5m;
-    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;   #将domain name.key替换成您证书的私钥文件名。
+    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;  #使用此加密套件。
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;   #修改protocols。
     ssl_prefer_server_ciphers on;   
     location / {
