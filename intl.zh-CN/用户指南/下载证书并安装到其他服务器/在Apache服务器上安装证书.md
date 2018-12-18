@@ -14,7 +14,7 @@
 2.  登录阿里云[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=casnext#/overview/cn-hangzhou)。
 3.  在SSL证书页面定位到需要下载的证书并单击证书卡片右下角的**下载**打开**证书下载**对话框。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/154512541733499_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/154512584533499_zh-CN.png)
 
 4.  在**证书下载**对话框中定位到Apache服务器，并单击右侧**操作**栏的**下载**将Apache版证书压缩包下载到本地。
 5.  解压Apache证书。
@@ -24,7 +24,7 @@
     -   证书文件（以.crt为后缀或文件类型）
     -   证书链文件（以.crt为后缀或文件类型）
     -   秘钥文件（以.key为后缀或文件类型）
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66001/154512541733689_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66001/154512584533689_zh-CN.png)
 
     **说明：** **.crt**扩展名的证书文件采用Base64-encoded的PEM格式文本文件，您可根据需要修改成**.pem**等扩展名。
 
@@ -50,11 +50,11 @@
     ```
     
     SSLProtocol all -SSLv2 -SSLv3    # 添加SSL协议支持协议，去掉不安全的协议。
-    SSLCipherSuite HIGH:!RC4:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!EXP:+MEDIUM    # 修改加密套件如下：
+    SSLCipherSuite HIGH:!RC4:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!EXP:+MEDIUM    # 使用此加密套件。
     SSLHonorCipherOrder on
     SSLCertificateFile cert/domain name_public.crt    # 将domain name_public.crt替换成您证书文件名。
     SSLCertificateKeyFile cert/domain name.key    # 将domain name.key替换成您证书的秘钥文件名。
-    SSLCertificateChainFile cert/domain name_chain.crt   # 以下证书链开头如果有#字符，请删除。
+    SSLCertificateChainFile cert/domain name_chain.crt   # 证书链开头如果有#字符，请删除。
     ```
 
 10. 保存httpd-ssl.conf文件配置。
