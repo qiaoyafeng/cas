@@ -11,23 +11,26 @@
 ## 操作指南 {#section_ydh_4qb_1gb .section}
 
 1.  登录阿里云[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=casnext#/overview/cn-hangzhou)。
-2.  登录阿里云[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=casnext#/overview/cn-hangzhou)。
-3.  在SSL证书页面定位到需要下载的证书并单击证书卡片右下角的**下载**打开**证书下载**对话框。
+2.  在SSL证书页面定位到需要下载的证书并单击证书卡片右下角的**下载**打开**证书下载**对话框。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/154512698533499_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/154519852433499_zh-CN.png)
 
-4.  在**证书下载**对话框中定位到Nginx/Tengine服务器，并单击右侧**操作**栏的**下载**将Nginx版证书压缩包下载到本地。
-5.  解压Nginx证书。
+3.  在**证书下载**对话框中定位到Nginx/Tengine服务器，并单击右侧**操作**栏的**下载**将Nginx版证书压缩包下载到本地。
+4.  解压Nginx证书。
 
     您将看到文件夹中有2个文件：
 
     -   证书文件（以.pem为后缀或文件类型）
     -   秘钥文件（以.key为后缀或文件类型）
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66002/154512698533690_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66002/154519852433690_zh-CN.png)
 
     **说明：** **.pem**扩展名的证书文件采用Base64-encoded的PEM格式文本文件，您可根据需要修改成其他扩展名。
 
     证书的格式详见[主流数字证书都有哪些格式](https://www.alibabacloud.com/help/faq-detail/42214.htm)。
+
+5.  在Nginx安装目录下创建**cert**目录，并将下载的证书文件和秘钥文件拷贝到**cert**目录中。
+
+    **说明：** 如果您在申请证书时选择**手动创建CSR**文件，请将对应的私钥文件放到**cert**目录下。
 
 6.  打开**Nginx安装目录** \> **conf文件夹** \> **nginx.conf文件**，在**nginx.conf文件**中找到以下属性：
 
@@ -56,7 +59,7 @@
     server {
     listen 443;
     server_name localhost;  # localhost修改为您证书绑定的域名。
-    ssl on;
+    ssl on;   #设置为on启用SSL功能。
     root html;
     index index.html index.htm;
     ssl_certificate cert/domain name.pem;   #将domain name.pem替换成您证书的文件名。
