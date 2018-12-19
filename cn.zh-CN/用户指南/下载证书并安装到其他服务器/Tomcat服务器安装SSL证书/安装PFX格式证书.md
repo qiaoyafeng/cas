@@ -11,23 +11,22 @@
 ## 操作指南 {#section_ygk_xhx_yfb .section}
 
 1.  登录阿里云[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=casnext#/overview/cn-hangzhou)。
-2.  登录阿里云[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=casnext#/overview/cn-hangzhou)。
-3.  在SSL证书页面定位到需要下载的证书并单击证书卡片右下角的**下载**打开**证书下载**对话框。
+2.  在SSL证书页面定位到需要下载的证书并单击证书卡片右下角的**下载**打开**证书下载**对话框。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/154515227133499_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/154518943333499_zh-CN.png)
 
-4.  在**证书下载**对话框中定位到Tomcat服务器，并单击右侧**操作**栏的**下载**将Tomcat版证书压缩包下载到本地。
-5.  解压Tomcat证书。
+3.  在**证书下载**对话框中定位到Tomcat服务器，并单击右侧**操作**栏的**下载**将Tomcat版证书压缩包下载到本地。
+4.  解压Tomcat证书。
 
     您将看到文件夹中有2个文件：
 
     -   证书文件（以.pfx为后缀或文件类型）
     -   密码文件（以.txt为后缀或文件类型）
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65316/154515227133514_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65316/154518943333514_zh-CN.png)
 
     **说明：** 每次下载证书都会产生新的密码，该密码仅匹配本次下载的证书。如果需要更新证书文件，同时也要更新匹配的密码。
 
-6.  打开**Tomcat安装目录** \> **conf文件夹** \> **server.xml文件**，在**server.xml文件**中添加以下属性（其中port属性请根据您的实际情况修改）：
+5.  打开**Tomcat安装目录** \> **conf文件夹** \> **server.xml文件**，在**server.xml文件**中添加以下属性（其中port属性请根据您的实际情况修改）：
 
     ```
     <Connector port="8443"
@@ -43,6 +42,6 @@
         ciphers="TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA256"/>
     ```
 
-7.  保存server.xml文件配置。
-8.  重启Tomcat。
+6.  保存server.xml文件配置。
+7.  重启Tomcat。
 
