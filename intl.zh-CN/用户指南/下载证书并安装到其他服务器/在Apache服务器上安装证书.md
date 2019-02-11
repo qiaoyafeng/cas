@@ -13,7 +13,7 @@
 1.  登录阿里云[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=casnext#/overview/cn-hangzhou)。
 2.  在SSL证书页面定位到需要下载的证书并单击证书卡片右下角的**下载**打开**证书下载**对话框。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/154717166433499_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/154987079333499_zh-CN.png)
 
 3.  在**证书下载**对话框中定位到Apache服务器，并单击右侧**操作**栏的**下载**将Apache版证书压缩包下载到本地。
 4.  解压Apache证书。
@@ -23,15 +23,15 @@
     -   证书文件（以.crt为后缀或文件类型）
     -   证书链文件（以.crt为后缀或文件类型）
     -   秘钥文件（以.key为后缀或文件类型）
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66001/154717166433689_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66001/154987079333689_zh-CN.png)
 
     **说明：** **.crt**扩展名的证书文件采用Base64-encoded的PEM格式文本文件，您可根据需要修改成**.pem**等扩展名。
 
     证书的格式详见[主流数字证书都有哪些格式](https://www.alibabacloud.com/help/faq-detail/42214.htm)。
 
-5.  在**Apache安装目录**下新建**cert目录**，并将下载的Apache证书、证书链和秘钥文件拷贝到**cert目录**中。
+5.  在**Apache安装目录**中新建**cert目录**，并将下载的Apache证书、证书链和秘钥文件拷贝到**cert目录**中。
 
-    **说明：** 如果申请证书时选择了**手动创建CSR文件**，请将手动生成创建的秘钥文件拷贝到**cert目录**下。
+    **说明：** 如果申请证书时选择了**手动创建CSR文件**，请将手动生成创建的秘钥文件拷贝到**cert目录**中。
 
 6.  打开**Apache安装目录** \> **conf文件夹** \> **httpd.conf文件**，在**httpd.conf文件**中找到以下参数并进行配置。
 
