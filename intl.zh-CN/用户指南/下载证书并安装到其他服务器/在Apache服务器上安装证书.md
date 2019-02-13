@@ -13,7 +13,7 @@
 1.  登录阿里云[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=casnext#/overview/cn-hangzhou)。
 2.  在SSL证书页面定位到需要下载的证书并单击证书卡片右下角的**下载**打开**证书下载**对话框。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/155005227733499_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/155007121633499_zh-CN.png)
 
 3.  在**证书下载**对话框中定位到Apache服务器，并单击右侧**操作**栏的**下载**将Apache版证书压缩包下载到本地。
 4.  解压Apache证书。
@@ -23,7 +23,7 @@
     -   证书文件（以.crt为后缀或文件类型）
     -   证书链文件（以.crt为后缀或文件类型）
     -   秘钥文件（以.key为后缀或文件类型）
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66001/155005227733689_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66001/155007121633689_zh-CN.png)
 
     **说明：** **.crt**扩展名的证书文件采用Base64-encoded的PEM格式文本文件，您可根据需要修改成**.pem**等扩展名。
 
@@ -63,7 +63,7 @@
     ```
 
 9.  保存httpd-ssl.conf文件配置。
-10. 重启Apache服务器。
-    1.  执行apachectl -k stop停止Apache服务。
-    2.  执行apachectl -k stop开启Apache服务。
+10. 重启Apache服务器使SSL配置生效。
+    1.  在Apache bin目录下执行apachectl -k stop停止Apache服务。
+    2.  在Apache bin目录下执行apachectl -k stop开启Apache服务。
 
