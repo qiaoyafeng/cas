@@ -41,7 +41,7 @@ Web服务器：Apache 2
     sudo a2enmod ssl
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155011412036989_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155074001236989_zh-CN.png)
 
     SSL模块启用后可执行`ls /etc/apache2/sites-available`查看目录下生成的default-ssl.conf文件。
 
@@ -69,7 +69,7 @@ Web服务器：Apache 2
     
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155011412136991_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155074001236991_zh-CN.png)
 
     /sites-available：该目录存放的是可用的虚拟主机；/sites-enabled：该目录存放的是已经启用的虚拟主机。
 
@@ -87,7 +87,7 @@ Web服务器：Apache 2
     sudo /etc/init.d/apache2 force-reload
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155011412136992_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155074001236992_zh-CN.png)
 
 7.  运行以下命令重启Apache 2服务。
 
@@ -95,10 +95,20 @@ Web服务器：Apache 2
     sudo /etc/init.d/apache2 restart
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155011412136993_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155074001236993_zh-CN.png)
 
 
 ## 后续操作 {#section_e3j_jk2_kgb .section}
 
 Apache 2服务重启成功后，您可在浏览器中输入https://www.YourDomainName.com验证证书安装结果。浏览器地址栏显示绿色的小锁标识说明证书安装成功。
+
+安装证书相关文档：
+
+-   [在Tomcat服务器上安装SSL证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/Tomcat服务器安装SSL证书/安装PFX格式证书.md#)
+-   [在Apache服务器上安装SSL证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在Apache服务器上安装SSL证书.md#)
+-   [我获取到的数字证书如何配置在自己的Apache中](../../../../../intl.zh-CN/常见问题/常见问题/我获取到的数字证书如何配置在自己的Apache中.md#)
+-   [在Nginx/Tengine服务器上安装证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在Nginx__Tengine服务器上安装证书.md#)
+-   [在IIS服务器上安装证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在IIS服务器上安装证书.md#)
+-   [CentOS系统Tomcat 8.5/9部署SSL证书](intl.zh-CN/最佳实践/CentOS系统Tomcat 8.5__9部署SSL证书.md#)
+-   [Jetty服务器配置SSL证书](../../../../../intl.zh-CN/常见问题/常见问题/Jetty服务器配置SSL证书.md#)
 
