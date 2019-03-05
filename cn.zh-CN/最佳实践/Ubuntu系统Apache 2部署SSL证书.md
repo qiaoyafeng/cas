@@ -10,7 +10,7 @@ Web服务器：Apache 2
 
 ## 前提条件 {#section_dp2_hk2_kgb .section}
 
--   已从[阿里云SSL证书服务控制台](https://yundunnext.console.aliyun.com/?spm=5176.2020520155.aliyun_sidebar.30.25af2a528ujbXD&p=cas#/overview/cn-hangzhou)下载Apache服务器证书。
+-   已从[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=cas#/overview/cn-hangzhou)下载Apache服务器证书。
 -   已安装Open SSL。
 
 ## 操作步骤 {#section_b2p_3k2_kgb .section}
@@ -41,7 +41,7 @@ Web服务器：Apache 2
     sudo a2enmod ssl
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155074001236989_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155177669136989_zh-CN.png)
 
     SSL模块启用后可执行`ls /etc/apache2/sites-available`查看目录下生成的default-ssl.conf文件。
 
@@ -69,7 +69,7 @@ Web服务器：Apache 2
     
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155074001236991_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155177669136991_zh-CN.png)
 
     /sites-available：该目录存放的是可用的虚拟主机；/sites-enabled：该目录存放的是已经启用的虚拟主机。
 
@@ -87,7 +87,7 @@ Web服务器：Apache 2
     sudo /etc/init.d/apache2 force-reload
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155074001236992_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155177669136992_zh-CN.png)
 
 7.  运行以下命令重启Apache 2服务。
 
@@ -95,7 +95,7 @@ Web服务器：Apache 2
     sudo /etc/init.d/apache2 restart
     ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155074001236993_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155177669136993_zh-CN.png)
 
 
 ## 后续操作 {#section_e3j_jk2_kgb .section}
