@@ -1,6 +1,6 @@
 # 什么是SSL证书服务 {#concept_xn2_52p_ydb .concept}
 
-SSL证书服务（Alibaba Cloud SSL Certificates Service）由阿里云联合多家国内外数字证书管理和颁发的权威机构、在阿里云平台上直接提供的服务器数字证书。您可以在阿里云平台上直接购买、或者免费获取所需类型的数字证书，并一键部署在阿里云产品中，以最小的成本将您的服务从HTTP转换成HTTPS。
+SSL证书服务（Alibaba Cloud SSL Certificates Service）由阿里云联合多家国内外数字证书管理和颁发的权威机构、在阿里云平台上直接提供的服务器数字证书。您可以在阿里云平台上直接购买、或者免费获取所需类型的数字证书，并一键部署在阿里云产品中，以最小的成本将您的服务从HTTP转换成HTTPS，实现网站的身份验证和数据加密传输。
 
 ## 相关概念 {#section_bxf_5xt_lgb .section}
 
