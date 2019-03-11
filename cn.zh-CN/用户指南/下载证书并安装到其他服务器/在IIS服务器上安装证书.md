@@ -13,39 +13,39 @@
 1.  登录阿里云[SSL证书控制台](https://yundunnext.console.aliyun.com/?spm=5176.2020520001.aliyun_sidebar.108.356a4bd3MLXFkb&p=cas#/overview/cn-hangzhou)。
 2.  在SSL证书页面，点击**已签发**标签，定位到需要下载的证书并单击证书卡片右下角的**下载**打开**证书下载**对话框。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155074005539167_zh-CN.jpg)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155227297439167_zh-CN.jpg)
 
 3.  在**证书下载**对话框中定位到IIS服务器，并单击右侧**操作**栏的**下载**将IIS版证书压缩包下载到本地。
 4.  解压IIS证书。您将看到文件中有一个证书文件（以.pfx为后缀或文件类型）和一个秘钥文件（以.txt为后缀或文件类型）。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155074005533691_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155227297433691_zh-CN.png)
 
     **说明：** 每次下载证书都会产生新的密码，该密码仅匹配本次下载的证书。如果需要更新证书文件，同时也要更新匹配的密码文件。
 
 5.  在**控制台**操作对话框中导入您下载的IIS证书文件。
     1.  单击**开始** \> **运行** \> **MMC**打开控制台。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155074005533701_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155227297533701_zh-CN.png)
 
     2.  单击**文件** \> **添加/删除管理单元**打开**添加/删除管理单元**对话框。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155074005533702_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155227297533702_zh-CN.png)
 
     3.  在**可用的管理单元**中单击**证书** \> **添加** \> **计算机账户** \> **本地计算机（运行此控制台的计算机）** \> **完成**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155074005533703_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155227297533703_zh-CN.png)
 
     4.  在控制台左侧导航栏单击**控制台根节点**下的**证书**打开证书树形列表。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155074005533705_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155227297533705_zh-CN.png)
 
     5.  单击**个人** \> **证书** \> **** \> **所有任务** \> **导入**打开**证书导入向导**对话框。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155074005533706_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155227297533706_zh-CN.png)
 
     6.  单击**浏览**导入下载的PFX格式证书文件。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155074005633837_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155227297533837_zh-CN.png)
 
         **说明：** 在导入证书文件时，**文件名**右侧文件类型下拉菜单中请选择**所有文件**类型。
 
@@ -53,11 +53,11 @@
 
         您可在下载的IIS证书文件中打开pfx-password .txt文件查看证书密码。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155074005633838_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155227297533838_zh-CN.png)
 
     8.  勾选**根据证书类型，自动选择证书存储**并单击**下一步**完成证书的导入。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155074005633839_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66003/155227297533839_zh-CN.png)
 
 6.  分配服务器证书。
     1.  打开IIS8.0 管理器面板，定位到待部署证书的站点，单击**绑定**。
