@@ -8,6 +8,8 @@
 
 Web服务器：Tomcat 8.5或9
 
+**说明：** Tomcat服务器需要提前安装JDK环境变量，请前往Tomcat官网查看推荐的JDK兼容配置。
+
 ## 前提条件 {#section_dp2_hk2_kgb .section}
 
 -   已从阿里云SSL证书服务控制台下载Tomcat服务器证书（包含PFX格式证书文件和TXT格式密码文件）。
@@ -15,7 +17,7 @@ Web服务器：Tomcat 8.5或9
 
     域名解析设置完成后执行ping www.yourdomain.com命令，如果返回了您所设置解析的主机IP地址，说明解析成功。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155074008638731_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155229107038731_zh-CN.png)
 
 
 ## 操作步骤 {#section_b2p_3k2_kgb .section}
@@ -26,7 +28,7 @@ Web服务器：Tomcat 8.5或9
 
 2.  在**Tomcat**安装目录下新建**cert**目录，将下载的证书和密码文件拷贝到**cert**目录下。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155074008638747_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155229107038747_zh-CN.png)
 
 3.  打开Tomcat/conf/server.xml，在server.xml文件中找到以下参数并进行修改。
 
@@ -84,11 +86,11 @@ Web服务器：Tomcat 8.5或9
 5.  重启Tomcat服务。
     1.  在Tomcat下的bin目录中执行./shutdown.sh关闭Tomcat服务。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155074008638751_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155229107038751_zh-CN.png)
 
     2.  在Tomcat下的bin目录中执行./startup.sh开启Tomcat服务。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155074008638752_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155229107038752_zh-CN.png)
 
 
 ## 后续操作 {#section_e3j_jk2_kgb .section}
