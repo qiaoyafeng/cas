@@ -40,7 +40,7 @@
 |[在Nginx/Tengine服务器上安装证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在Nginx__Tengine服务器上安装证书.md#)|
 |[在IIS服务器上安装证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在IIS服务器上安装证书.md#)|
 |[在GlassFish服务器上安装证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在GlassFish服务器上安装证书.md#)|
-|[JBoss上证书](intl.zh-CN/常见问题/常见问题/JBoss如何部署SSL证书.md#)|
+|[Jboss服务器上安装证书](intl.zh-CN/常见问题/常见问题/JBoss如何部署SSL证书.md#)|
 |[Jetty服务器配置SSL证书](intl.zh-CN/常见问题/常见问题/Jetty服务器配置SSL证书.md#)|
 |[苹果ATS - 证书选择及配置](intl.zh-CN/常见问题/常见问题/苹果ATS - 证书选择及配置.md#)|
 |[服务器上装SSL证书会不会影响用户浏览网页的速度？](intl.zh-CN/常见问题/常见问题/服务器上装SSL证书会不会影响用户浏览网页的速度.md#)|
