@@ -14,12 +14,12 @@ SSL certificates are available for the following Alibaba Cloud products:
 1.  Log on to the [Alibaba Cloud SSL Certificates console](https://yundunnext.console.aliyun.com/?p=casnext#/overview/cn-hangzhou).
 2.  Open the **Issued Certificates** page, click **Deploy to Product** for the target certificate.
 
-    ![](images/33411_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65315/155548094933411_en-US.png)
 
 3.  Select the target Alibaba Cloud product from the drop-down list.
 4.  In the **Deploy Certificate to CDN/SLB** pane on the right, select the region where you want to deploy the certificate.
 
-    ![](images/33414_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65315/155548094933414_en-US.png)
 
     Multiple regions can be selected.
 
@@ -29,5 +29,5 @@ SSL certificates are available for the following Alibaba Cloud products:
 
 After deploying the certificate to the Alibaba Cloud product, click the certificate card. On the displayed **Certificate Details** page, you can view the details about the certificate and the information about the Alibaba Cloud product.
 
-![](images/33415_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65315/155548095033415_en-US.png)
 
