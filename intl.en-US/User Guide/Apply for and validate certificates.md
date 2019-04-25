@@ -6,15 +6,10 @@ After purchasing a certificate, you need to go through the certificate applicati
 
 1.  Log on to the [Alibaba Cloud SSL Certificates console](https://yundunnext.console.aliyun.com/?p=casnext#/overview/cn-hangzhou).
 2.  Click **Apply** in the lower-right corner of the certificate you purchased and pending for application.
-
-    ![](images/33399_en-US.png)
-
 3.  On the Apply for Certificate page, enter the certificate application information on the Enter Application tab page.
     -   **Domains to Bind:** Click the question mark of this parameter to view the tips and enter a correct domain name.
 
         **Note:** Application information varies with certificate types. For **free** and**standard** SSL certificates, you need to enter personal information. For **professional SSL certificates**, you need to enter personal information and company details.
-
-        ![](images/33400_en-US.png)
 
         **Note:** Limitations on bound domain names vary with certificate types. Enter the domain name based on the tips.
 
@@ -34,8 +29,6 @@ After purchasing a certificate, you need to go through the certificate applicati
         **Note:** We recommend that you select **Automatic** for **CSR Generation**. If not, your certificate may fail to be pushed to the specified Alibaba Cloud product.
 
     -   **Manual:** Your CSR file is manually generated and you need to copy its content to the **CSR File** dialog box. For more information, see [How to generate a CSR file](https://help.aliyun.com/knowledge_detail/42218.html).
-
-        ![](images/33403_en-US.png)
 
         **Note:** The manually generated CSR file cannot be pushed to the specified Alibaba Cloud product with one click.
 
@@ -62,25 +55,9 @@ After entering all the required certificate application information, you need to
 2.  Click **Upload File** and upload the qualification documents as required.
 3.  Click **Submit** in the lower-right corner of the page. The system displays this prompt: **This application request has been submitted to the certificate authority. Keep your phone on and check for the email from the certificate authority in your mailbox.**
 
-    ![](images/33409_en-US.png)
-
-
 Alibaba Cloud verifies your certificate qualification after receiving the review information you submitted. The time required for this process varies according to the individual requirements of each certificate authority. Thus, we recommend that you periodically check your email and phone for notifications.
 
 In the **Unissued Certificates** area of the SSL Certificates page, you can see the ****expected issuance time, type, bound domain, and validity period of the certificate you applied for.
 
-![](images/33410_en-US.png)
-
 **Note:** To modify your application information, you must withdraw the application and modify the information **before the certificate is issued**. The application cannot be withdrawn after the certificate is issued.
-
-## Submissions for certificate application {#section_p2p_ghs_yfb .section}
-
-|Certificate brand|Submission|
-|-----------------|----------|
-|GeoTrust/Symantec/GlobalSign|Business license|
-|Bank account opening permit \(required for EV certificates only\)|
-|CFCA|Business license|
-|Agent's identity card|
-|Lawyer certificate \(required for EV certificates only\)|
-|Application form, letter of authorization, and lawyer's letter \(templates are available in the Alibaba Cloud SSL Certificates console\)|
 
