@@ -31,7 +31,7 @@ Web server: Apache2
 
     `sudo a2enmod ssl`
 
-    ![](images/36989_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155983894936989_en-US.png)
 
     After the SSL module is enabled, you can execute `ls /etc/apache2/sites-available` and view the default-ssl.conf file created in the directory.
 
@@ -53,7 +53,7 @@ Web server: Apache2
     						
     ```
 
-    ![](images/36991_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155983894936991_en-US.png)
 
     /sites-available: This directory stores available virtual machine host; /sites-enabled: This directory stores enabled virtual machine host.
 
@@ -69,7 +69,7 @@ Web server: Apache2
 
     `sudo /etc/init.d/apache2 force-reload`
 
-    ![](images/36992_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155983894936992_en-US.png)
 
 7.  Restart the Apache2 service, and execute the following command:
 
@@ -77,7 +77,7 @@ Web server: Apache2
     sudo /etc/init.d/apache2 restart
     ```
 
-    ![](images/36993_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/93419/155983894936993_en-US.png)
 
     **Note:** 
 
