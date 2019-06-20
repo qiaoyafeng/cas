@@ -39,9 +39,6 @@ File validation methods typically require operations by your site administrator.
 **Procedures** 
 
 1.  Log in to the cloud shield Certificate Services Management Console, select the certificate order in my list of orders for which you have submitted an audit request, and click progress, you can view information about the domain name authorization configuration, such as the Authentication Files that need to be uploaded and the specified server directory, etc. \).
-
-    ![](images/4236_en-US.png)
-
 2.  Downloads the specified authentication file to the local computer, as required by the configuration, then upload through tools, such as FTP, to the specified directory on your server.
 
     For example, the domain name of your website is a.com, the disk directory for the server on which the site is located is/www/htdocs. According to the above File validation Configuration Requirements, You need to configure as follows:
