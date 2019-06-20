@@ -32,15 +32,9 @@ This article describes FAQs, application scenarios, and solutions of Alibaba Clo
 |[The Administrator mailbox in the domain name ownership verification link is incorrect and cannot be verified for domain name ownership](reseller.en-US/FAQ/FAQ/The Administrator mailbox in the domain name ownership verification link is incorrect and cannot be verified for domain name ownership.md#)|
 |Application review|[Troubleshoot certificate application failure](reseller.en-US/FAQ/FAQ/Troubleshoot certificate application failure.md#)|
 |["Primary domain name cannot be empty" error returned when uploading my CSR file](reseller.en-US/FAQ/FAQ/"Primary domain name cannot be empty" error returned when uploading my CSR file.md#)|
-| |
 |[What do I do if my certificate order remains in the review stage for a long time?](reseller.en-US/FAQ/FAQ/What do I do if my certificate order remains in the review stage for a long time?.md#)|
 |Configure/deploy certificate|[How to deploy an SSL digital certificate on various types of servers?](reseller.en-US/FAQ/FAQ/How to deploy an SSL digital certificate on various types of servers?.md#)|
 |[How can I enable HTTPS for multiple site and domains on one server?](reseller.en-US/FAQ/FAQ/How can I enable HTTPS for multiple websites and domains on one server?.md#)|
-|[Install SSL certificates in Tomcat servers](../../../../reseller.en-US/User Guide/Download and install SSL certificates/Install SSL certificates in Tomcat servers/Install .pfx SSL certificates.md#)|
-|[Install SSL certificates in Apache servers](../../../../reseller.en-US/User Guide/Download and install SSL certificates/Install SSL certificates in Apache servers.md#)|
-|[Install SSL certificates in Nginx/Tengine servers](../../../../reseller.en-US/User Guide/Download and install SSL certificates/Install SSL certificates in Nginx__Tengine servers.md#)|
-|[Install SSL certificates in IIS servers](../../../../reseller.en-US/User Guide/Download and install SSL certificates/Install SSL certificates in IIS servers.md#)|
-|[Install SSL certificates in GlassFish servers](../../../../reseller.en-US/User Guide/Download and install SSL certificates/Install SSL certificates in GlassFish servers.md#)|
 |[How does JBoss deploy an SSL certificate?](reseller.en-US/FAQ/FAQ/How to deploy an SSL certificate in a JBoss server?.md#)|
 |[An SSL certificate is configured by the jetty server.](reseller.en-US/FAQ/FAQ/An SSL certificate is configured by the jetty server..md#)|
 |[Certificate selection and configuration for Apple ATS](reseller.en-US/FAQ/FAQ/Certificate selection and configuration for Apple ATS.md#)|
