@@ -20,8 +20,6 @@ Select the DNS domain name authorization authentication method, you need to go t
 
     **Note:** After you submit an audit request, the system may take several minutes to generate the relevant domain name authorization configuration information.
 
-    ![](images/4235_en-US.png)
-
 2.  Add a record to your domain name resolution management system based on the domain name authorization Configuration Requirements. Be sure to correctly fill in the host records, record values, and record types, note do not reverse the host records and record values configuration.
 
     **Note:** The cloud shield Certificate Service provides a host record with a full domain name, if your domain name management system does not support full domain name host records, remove the suffix section of the root domain name..
