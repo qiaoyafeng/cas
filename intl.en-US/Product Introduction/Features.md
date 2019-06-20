@@ -8,5 +8,5 @@ The features of Alibaba Cloud Certificates Service are as follows:
 
 You can view details about your existing certificates from the certificate list on the [Alibaba Cloud SSL Certificates console](https://yundun.console.aliyun.com/?p=cas#/cas/home).
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13555/4173_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13555/155548599939268_en-US.jpg)
 
