@@ -16,12 +16,12 @@
 
 ## 常见的服务器安装指南 { .section}
 
--   [在Tomcat服务器上安装SSL证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/Tomcat服务器安装SSL证书/安装PFX格式证书.md#)
--   [在Apache服务器上安装SSL证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在Apache服务器上安装SSL证书.md#)
--   [Ubuntu系统Apache 2部署SSL证书](../../../../../intl.zh-CN/最佳实践/Ubuntu系统Apache 2部署SSL证书.md#)
--   [我获取到的数字证书如何配置在自己的Apache中](intl.zh-CN/常见问题/常见问题/我获取到的数字证书如何配置在自己的Apache中.md#)
--   [在Nginx/Tengine服务器上安装证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在Nginx__Tengine服务器上安装证书.md#)
--   [在IIS服务器上安装证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在IIS服务器上安装证书.md#)
--   [CentOS系统Tomcat 8.5/9部署SSL证书](../../../../../intl.zh-CN/最佳实践/CentOS系统Tomcat 8.5__9部署SSL证书.md#)
+-   [在Tomcat服务器上安装SSL证书](../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/Tomcat服务器安装SSL证书/安装PFX格式证书.md#)
+-   [在Apache服务器上安装SSL证书](../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在Apache服务器上安装SSL证书.md#)
+-   [Ubuntu系统Apache 2部署SSL证书](../../../../intl.zh-CN/最佳实践/Ubuntu系统Apache 2部署SSL证书.md#)
+-   [我获取到的数字证书如何配置在自己的Apache中？](intl.zh-CN/常见问题/常见问题/我获取到的数字证书如何配置在自己的Apache中？.md#)
+-   [在Nginx/Tengine服务器上安装证书](../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在Nginx__Tengine服务器上安装证书.md#)
+-   [在IIS服务器上安装证书](../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在IIS服务器上安装证书.md#)
+-   [CentOS系统Tomcat 8.5/9部署SSL证书](../../../../intl.zh-CN/最佳实践/CentOS系统Tomcat 8.5__9部署SSL证书.md#)
 -   [Jetty服务器配置SSL证书](intl.zh-CN/常见问题/常见问题/Jetty服务器配置SSL证书.md#)
 
