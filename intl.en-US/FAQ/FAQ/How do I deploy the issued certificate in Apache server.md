@@ -4,7 +4,7 @@ You can deploy certificates from Alibaba Cloud Certificates Service to various w
 
 ## Step 1: Check whether your digital certificate contains a certificate chain {#section_y4j_3cv_ydb .section}
 
-Use a text editor tool to open your certificate file \(for example, mycert.pem\) and check whether the certificate contains a certificate chain. If you see three `BEGIN  CERTIFICATE` segments in the certificate file, they indicate that your certificate file contains a certificate chain.
+Use a text editor tool to open your certificate file \(for example, mycert.pem\) and check whether the certificate contains a certificate chain. If you see three `BEGIN CERTIFICATE` segments in the certificate file, they indicate that your certificate file contains a certificate chain.
 
 **Note:** If you certificate file does not contain a certificate chain, skip the following steps in this document. Deploy your certificate directly on the Apache server.
 
@@ -45,4 +45,14 @@ SSLCertificateKeyFile conf/ssl.key/mycert.key
 SSLCertificateChainFile conf/ssl.crt/mycert_chain.pem 
 ...
 ```
+
+References:
+
+-   [Install SSL certificates in Tomcat servers](../../../../intl.en-US/User Guide/Download and install SSL certificates/Install SSL certificates in Tomcat servers/Install .pfx SSL certificates.md#)
+-   [Install SSL certificates in Apache servers](../../../../intl.en-US/User Guide/Download and install SSL certificates/Install SSL certificates in Apache servers.md#)
+-   [Deploy SSL certificate on Ubuntu Apache2](../../../../intl.en-US/Best Practices/Deploy SSL certificate on Ubuntu Apache2.md#)
+-   [Install SSL certificates in Nginx/Tengine servers](../../../../intl.en-US/User Guide/Download and install SSL certificates/Install SSL certificates in Nginx__Tengine servers.md#)
+-   [Install SSL certificates in IIS servers](../../../../intl.en-US/User Guide/Download and install SSL certificates/Install SSL certificates in IIS servers.md#)
+-   [Deploy SSL certificates on Tomcat 8.5 or Tomcat 9.0 running CentOS](../../../../intl.en-US/Best Practices/Deploy SSL certificates on Tomcat 8.5 or Tomcat 9.0 running CentOS.md#)
+-   [An SSL certificate is configured by the jetty server](intl.en-US/FAQ/FAQ/An SSL certificate is configured by the jetty server.md#)
 
