@@ -18,7 +18,7 @@ You can delete revoked certificates. For differences between revoking and deleti
 2.  Go to the Issued page.
 3.  Select the certificate to revoke and click **Revoke**.
 
-    ![1](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65317/156445657739609_en-US.png)
+    ![1](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65317/156453694539609_en-US.png)
 
 4.  Fill in the revocation application and click **Next** to submit the application.
 5.  Verify the information and click **Submit**.
