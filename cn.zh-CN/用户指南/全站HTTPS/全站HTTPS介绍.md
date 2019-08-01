@@ -4,7 +4,7 @@ SSL证书支持全站HTTPS服务，帮助您解决SSL证书安装部署、证书
 
 将服务器域名的DNS记录解析到该服务的CNAME域名上，即可将您原来的站点服务器设置为全站HTTPS服务。
 
-## 产品优势 {#section_pds_3g0_yth .section}
+## 功能优势 {#section_pds_3g0_yth .section}
 
 -   使用全站HTTPS服务，无需再关注证书时间到期之前，重新申请并部署证书的问题。
 -   使用全站HTTPS服务，无需再关注证书时间到期后，网站无法提供服务的问题。
