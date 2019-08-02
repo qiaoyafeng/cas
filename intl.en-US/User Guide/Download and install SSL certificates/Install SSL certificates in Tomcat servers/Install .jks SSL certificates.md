@@ -15,18 +15,18 @@ In this example, the certificate name is **domain name**, and the certificate fi
 1.  Log on to the Alibaba Cloud SSL Certificates console.
 2.  On the **SSL Certificates** page, locate the target SSL certificate and click **Download** in the lower-right corner.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/156447350933499_en-US.png)
+    ![0](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/66242/156472897633499_en-US.png)
 
 3.  In the **Download Certificate** dialog box, locate the row that contains the certificate whose Server Type is Tomcat, and click **Download** in the **Actions** column to download the package to your local host.
 4.  Decompress the package. You will obtain a certificate file \(suffixed with .pfx or of .pfx file format\) and a key file \(suffixed with .txt or of .txt file format\).
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/73739/156447350944730_en-US.png)
+    ![1](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/73739/156472897644730_en-US.png)
 
     **Note:** Each time the certificate is downloaded, a new password is generated, which is valid only for the current certificate. To update the certificate file, you also need to update the matching key file.
 
 5.  Run the following Java JDK command to convert the .pfx certificate file to a .jks file:
 
-    ```
+    ``` {#codeblock_lfx_oup_i51}
     keytool -importkeystore -srckeystore domain name.pfx -destkeystore domain name.jks -srcstoretype PKCS12 -deststoretype JKS
     ```
 
@@ -39,7 +39,7 @@ In this example, the certificate name is **domain name**, and the certificate fi
 7.  In the **Tomcat** directory, create **cert** directory. Copy the downloaded certificate and password file to the **cert** directory.
 8.  Open **Tomcat installation directory** \> **conf** \> **server.xml**. In the **server.xml** file, locate the `<Connection port="8443"`sheet and add the following parameters:
 
-    ```
+    ``` {#codeblock_2ce_epp_pbu}
     
     #keystoreFile indicates the path of your certificate file. Replace the content after cert/ with the name of your certificate file.
     keystoreFile="cert/domain name.jks"
@@ -50,7 +50,7 @@ In this example, the certificate name is **domain name**, and the certificate fi
 
     The complete configuration is as follows \(you can modify the port attribute as needed\):
 
-    ```
+    ``` {#codeblock_ujf_jvs_not}
     <Connector port="8443"
         protocol="HTTP/1.1"
         SSLEnabled="true"
@@ -67,8 +67,8 @@ In this example, the certificate name is **domain name**, and the certificate fi
 9.  Save the configuration in the server.xml file.
 10. （optional）Configure web.xml file to force HTTP to jump to HTTPS.
 
-    ```
-    #在</welcome-file-list>后添加以下内容：
+    ``` {#codeblock_5q8_w2h_jiy}
+    #Add the following after </welcome-file-list>:
     <login-config>  
         <!-- Authorization setting for SSL -->  
         <auth-method>CLIENT-CERT</auth-method>  
