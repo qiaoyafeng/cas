@@ -17,7 +17,7 @@ Web服务器：Tomcat 8.5或9
 
     域名解析设置完成后执行ping www.yourdomain.com命令，如果返回了您所设置解析的主机IP地址，说明解析成功。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155229122838731_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/156498350938731_zh-CN.png)
 
 
 ## 操作步骤 {#section_b2p_3k2_kgb .section}
@@ -28,24 +28,22 @@ Web服务器：Tomcat 8.5或9
 
 2.  在**Tomcat**安装目录下新建**cert**目录，将下载的证书和密码文件拷贝到**cert**目录下。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155229122838747_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/156498351038747_zh-CN.png)
 
 3.  打开Tomcat/conf/server.xml，在server.xml文件中找到以下参数并进行修改。
 
-    ```
+    ``` {#codeblock_utl_vo6_8yy}
     <Connector port="8080" protocol="HTTP/1.1"
                    connectionTimeout="20000"
                    redirectPort="8443" />
-        
-     #找到以上参数，去掉<!- - 和 - ->这对注释符并修改为如下参数：
-     <Connector port="80" protocol="HTTP/1.1"
-     #将Connector port修改为80。
+    
+     #找到以上参数，去掉<!- - 和 - ->这对注释符并修改为如下参数，对HTTPS默认端口进行配置：
+     <Connector port="80" protocol="HTTP/1.1"   #将Connector port修改为80。
                    connectionTimeout="20000"
-                   redirectPort="443" />   
-                   #将redirectPort修改为SSL默认端口443，让HTTP访问自动跳转为HTTPS访问。
+                   redirectPort="443" />    #将redirectPort修改为SSL默认端口443，让HTTPS请求转发到443端口。
     ```
 
-    ```
+    ``` {#codeblock_k67_79c_tki}
     
     
         <Connector port="8443"
@@ -58,39 +56,49 @@ Web服务器：Tomcat 8.5或9
                              certificateKeystoreType="PKCS12" />
     
         #找到以上参数，去掉<!- - 和 - ->这对注释符并修改为如下参数：
-        <Connector port="443"
-        #将Tomcat中默认的HTTPS端口Connector port 8443修改为443。8443端口不可通过域名直接访问、需要在域名后加上端口号；443端口是HTTPS的默认端口，可通过域名直接访问，无需在域名后加端口号。
-              protocol="org.apache.coyote.http11.Http11NioProtocol"
-              #server.xml文件中Connector port有两种运行模式（NIO和APR），请选择NIO模式（也就是protocol="org.apache.coyote.http11.Http11NioProtocol"）这一段进行配置。
+        <Connector port="443"   #将Tomcat中默认的HTTPS端口Connector port 8443修改为443。8443端口不可通过域名直接访问、需要在域名后加上端口号；443端口是HTTPS的默认端口，可通过域名直接访问，无需在域名后加端口号。
+              protocol="org.apache.coyote.http11.Http11NioProtocol"   #server.xml文件中Connector port有两种运行模式（NIO和APR），请选择NIO模式（也就是protocol="org.apache.coyote.http11.Http11NioProtocol"）这一段进行配置。
               maxThreads="150"
               SSLEnabled="true">
             <SSLHostConfig>
-                <Certificate       certificateKeystoreFile="/usr/local/tomcat/cert/证书域名.pfx"
-                 #此处certificateKeystoreFile代表证书文件的路径，请用您证书的路径+文件名替换证书域名.pfx，例如：certificateKeystoreFile="/usr/local/tomcat/cert/abc.com.pfx"
-                 certificateKeystorePassword="证书密码"
-                 #此处certificateKeystorePassword为SSL证书的密码，请用您证书密码文件pfx-password.txt中的密码替换，例如：certificateKeystorePassword="bMNML1Df"
-                 certificateKeystoreType="PKCS12" />
-                 #证书类型为PFX格式时，certificateKeystoreType修改为PKCS12。
-        
+                <Certificate       certificateKeystoreFile="/usr/local/tomcat/cert/证书域名.pfx"   #此处certificateKeystoreFile代表证书文件的路径，请用您证书的路径+文件名替换证书域名.pfx，例如：certificateKeystoreFile="/usr/local/tomcat/cert/abc.com.pfx"
+                 certificateKeystorePassword="证书密码"   #此处certificateKeystorePassword为SSL证书的密码，请用您证书密码文件pfx-password.txt中的密码替换，例如：certificateKeystorePassword="bMNML1Df"
+                 certificateKeystoreType="PKCS12" />   #证书类型为PFX格式时，certificateKeystoreType修改为PKCS12。
+            </SSLHostConfig>
+        </Connector>
+    					
     ```
 
-    ```
+    ``` {#codeblock_his_9gy_mhx}
     <Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
-        
+    
     #找到以上参数，去掉<!- - 和 - ->这对注释符并修改为如下参数：
-    <Connector port="8009" protocol="AJP/1.3" redirectPort="443" />
-     #将redirectPort修改为443，让HTTP访问自动跳转为HTTPS访问。
+    <Connector port="8009" protocol="AJP/1.3" redirectPort="443" />  #将redirectPort修改为443，让HTTPS请求转发到443端口。
     ```
 
-4.  保存server.xml文件配置。
-5.  重启Tomcat服务。
+4.  （可选步骤）在server.xml文件最底部添加以下内容，实现HTTP自动跳转为HTTPS
+
+    ``` {#codeblock_hay_crm_ai6}
+    <security-constraint> 
+             <web-resource-collection > 
+                  <web-resource-name >SSL</web-resource-name>  
+                  <url-pattern>/*</url-pattern> 
+           </web-resource-collection> 
+           <user-data-constraint> 
+                        <transport-guarantee>CONFIDENTIAL</transport-guarantee> 
+           </user-data-constraint> 
+        </security-constraint>
+    ```
+
+5.  保存server.xml文件配置。
+6.  重启Tomcat服务。
     1.  在Tomcat下的bin目录中执行./shutdown.sh关闭Tomcat服务。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155229122838751_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/156498351038751_zh-CN.png)
 
     2.  在Tomcat下的bin目录中执行./startup.sh开启Tomcat服务。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/155229124438752_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/105838/156498351038752_zh-CN.png)
 
 
 ## 后续操作 {#section_e3j_jk2_kgb .section}
@@ -99,11 +107,11 @@ Tomcat服务重启成功后，您可在浏览器中输入您SSL证书绑定的�
 
 安装证书相关文档：
 
--   [在Tomcat服务器上安装SSL证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/Tomcat服务器安装SSL证书/安装PFX格式证书.md#)
--   [在Apache服务器上安装SSL证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在Apache服务器上安装SSL证书.md#)
+-   [在Tomcat服务器上安装SSL证书](../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/Tomcat服务器安装SSL证书/安装PFX格式证书.md#)
+-   [在Apache服务器上安装SSL证书](../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在Apache服务器上安装SSL证书.md#)
 -   [Ubuntu系统Apache 2部署SSL证书](intl.zh-CN/最佳实践/Ubuntu系统Apache 2部署SSL证书.md#)
--   [我获取到的数字证书如何配置在自己的Apache中](../../../../../intl.zh-CN/常见问题/常见问题/我获取到的数字证书如何配置在自己的Apache中.md#)
--   [在Nginx/Tengine服务器上安装证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在Nginx__Tengine服务器上安装证书.md#)
--   [在IIS服务器上安装证书](../../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在IIS服务器上安装证书.md#)
--   [Jetty服务器配置SSL证书](../../../../../intl.zh-CN/常见问题/常见问题/Jetty服务器配置SSL证书.md#)
+-   [我获取到的数字证书如何配置在自己的Apache中？](../../../../intl.zh-CN/常见问题/常见问题/我获取到的数字证书如何配置在自己的Apache中？.md#)
+-   [在Nginx/Tengine服务器上安装证书](../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在Nginx__Tengine服务器上安装证书.md#)
+-   [在IIS服务器上安装证书](../../../../intl.zh-CN/用户指南/下载证书并安装到其他服务器/在IIS服务器上安装证书.md#)
+-   [Jetty服务器配置SSL证书](../../../../intl.zh-CN/常见问题/常见问题/Jetty服务器配置SSL证书.md#)
 
