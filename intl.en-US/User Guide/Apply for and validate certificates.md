@@ -9,10 +9,10 @@ After purchasing a certificate, you need to go through the certificate applicati
 3.  On the Apply for Certificate page, enter the certificate application information on the Enter Application tab page.
     -   **Domains to Bind:** Click the question mark of this parameter to view the tips and enter a correct domain name.
 
-        **Note:** Application information varies with certificate types. For **free** and**standard** SSL certificates, you need to enter personal information. For **professional SSL certificates**, you need to enter personal information and company details.
+        **Note:** 
 
-        **Note:** Limitations on bound domain names vary with certificate types. Enter the domain name based on the tips.
-
+        -   Application information varies with certificate types. For **free** and**standard** SSL certificates, you need to enter personal information. For **professional SSL certificates**, you need to enter personal information and company details.
+        -   Limitations on bound domain names vary with certificate types. Enter the domain name based on the tips.
     -   **Company Name:** Enter actual information as required.
     -   **Type of Company:** Select the type of your company.
     -   **Company Phone:**Enter contact phone number. The certificate authority will call you on this number to confirm the certificate verification.
@@ -32,8 +32,6 @@ After purchasing a certificate, you need to go through the certificate applicati
 
         **Note:** The manually generated CSR file cannot be pushed to the specified Alibaba Cloud product with one click.
 
-        **Note:** 
-
         -   Your CSR file format must be correct in order ensure secure certificate application.
         -   You must store your private key securely when generating a CSR file. One certificate file maps a key file. Your digital certificate becomes useless if the private key is lost. Alibaba Cloud is not responsible for storing your private key. If your private key is lost, you have to re-purchase a digital certificate to replace the original one.
 5.  Click **Next** to go to the Verify Information tab page.
@@ -42,16 +40,13 @@ After purchasing a certificate, you need to go through the certificate applicati
 
 After entering all the required certificate application information, you need to upload the verification file.
 
-![](images/33408_en-US.png)
-
 1.  Follow the instructions on the **Apply for Certificate** page. Verification information varies with certificate types.
 
-    **Note:** To download the verification template, fill in it, and stamp it, follow the tips on the Verify Information tab page.
+    **Note:** 
 
-    **Note:** If uploading an image, make sure that the image is in PNG or JPEG format and its size does not exceed 500 KB.
-
-    **Note:** The certificate has a validity period. You can save the application information for subsequent use.
-
+    -   To download the verification template, fill in it, and stamp it, follow the tips on the Verify Information tab page.
+    -   If uploading an image, make sure that the image is in PNG or JPEG format and its size does not exceed 500 KB.
+    -   The certificate has a validity period. You can save the application information for subsequent use.
 2.  Click **Upload File** and upload the qualification documents as required.
 3.  Click **Submit** in the lower-right corner of the page. The system displays this prompt: **This application request has been submitted to the certificate authority. Keep your phone on and check for the email from the certificate authority in your mailbox.**
 
