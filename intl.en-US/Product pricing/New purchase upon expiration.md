@@ -1,6 +1,6 @@
 # New purchase upon expiration {#concept_bty_rfp_ydb .concept}
 
-The validity period of an Alibaba Cloud SSL certificate is one or two years, depending on the type of the certificate. Once your SSL certificate expires, you need to purchase a new one.
+The validity period of an Alibaba Cloud SSL certificate is one, two or three years, depending on the type of the certificate. Once your SSL certificate expires, you need to purchase a new one.
 
 ## Payment {#section_nsc_vfp_ydb .section}
 
@@ -21,7 +21,7 @@ SSL certificates cannot be renewed, and can only be purchased. Before your certi
 1.  Log on to the [Alibaba Cloud SSL Certificates console](https://yundunnext.console.aliyun.com/?p=cas#/overview).
 2.  Click **Purchase Certificate** in the upper-right corner to go to the certificate purchase page.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13562/155620414339080_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13562/156644430639080_en-US.png)
 
 3.  Select the parameter values and complete payment.
 
