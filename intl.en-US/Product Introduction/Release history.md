@@ -2,5 +2,5 @@
 
 |Time|Events|
 |----|------|
-|April 2016|The cloud shield Certificate Service is officially on-site, offering the ability to sell certificates.|
+|April 2016|The SSL Certificate Service is officially on-site, offering the ability to sell certificates.|
 
