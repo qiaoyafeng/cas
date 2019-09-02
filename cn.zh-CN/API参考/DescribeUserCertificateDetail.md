@@ -1,8 +1,8 @@
 # DescribeUserCertificateDetail {#doc_api_cas_DescribeUserCertificateDetail .reference}
 
-查询一个证书详细。
+查询单个证书的详细信息。
 
-调用本接口查询一个证书详细。
+调用本接口查询单个证书的详细信息，包括证书名称、证书内容、证书私钥、签发机构、证书有效期和证书指纹等信息。
 
 ## 调试 {#api_explorer .section}
 
