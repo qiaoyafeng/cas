@@ -1,6 +1,6 @@
 # API概览 {#doc_1041093 .concept}
 
-SSL证书提供以下相关API接口。
+SSL证书服务提供以下相关API接口。
 
 |API|描述|
 |---|--|
@@ -10,4 +10,5 @@ SSL证书提供以下相关API接口。
 |[DescribeUserCertificateDetail](cn.zh-CN/API参考/DescribeUserCertificateDetail.md#)|调用本接口查询一个证书的详细信息。|
 |[DescribeDVOrderResult](cn.zh-CN/API参考/DescribeDVOrderResult.md#)|调用本接口查询DV订单信息。|
 |[DeleteUserCertificate](cn.zh-CN/API参考/DeleteUserCertificate.md#)|调用本接口删除用户的证书文件。|
+|[DescribeOrderInstanceList](cn.zh-CN/API参考/DescribeOrderInstanceList.md#)|调用本接口查询证书订单实例列表信息。|
 
