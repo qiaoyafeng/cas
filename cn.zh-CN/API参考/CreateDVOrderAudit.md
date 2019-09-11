@@ -51,7 +51,7 @@
  指定用户姓名。
 
  |
-|Lang|String|否|ZH|指定请求和接收消息的语言类型。
+|Lang|String|否|zh|指定请求和接收消息的语言类型。
 
  |
 |SourceIp|String|否|1.2.3.4|指定请求的来源IP地址。
@@ -62,7 +62,7 @@
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|RequestId|String|无|无实质性返回。code!=200都是失败，详见错误描述。
+|RequestId|String|5D97F21E-2B95-4EA9-8A9B-2759E04A5B4C|返回结果的请求ID。
 
  |
 
