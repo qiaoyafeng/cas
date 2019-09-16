@@ -1,8 +1,6 @@
 # DescribeUserCertificateList {#doc_api_cas_DescribeUserCertificateList .reference}
 
-查询证书列表。
-
-调用本接口查询证书列表信息。
+调用DescribeUserCertificateList接口查询证书列表信息。
 
 ## 调试 {#api_explorer .section}
 
@@ -21,7 +19,10 @@
 |ShowSize|Integer|是|50|指定每页显示多少条记录。默认取值为50。
 
  |
-|Lang|String|否|ZH|请求和接收消息的语言类型。
+|Lang|String|否|zh|请求和接收消息的语言类型。
+
+ -   **zh**：中文
+-   **en**：英文
 
  |
 |SourceIp|String|否|1.2.3.4|请求的来源IP地址。
@@ -38,13 +39,13 @@
 |buyInAliyun|Boolean|true|是否在阿里云购买。
 
  |
-|city|String|hongzhou|证书组织所在城市。
+|city|String|hongzhou|购买证书的用户所属的公司或组织所在的城市。
 
  |
-|common|String|\*.com|证书的CN属性。
+|common|String|\*.com|证书绑定的主域名。
 
  |
-|country|String|CN|证书组织所在国家。
+|country|String|CN|购买证书的用户所属的公司或组织所在的国家。
 
  |
 |endDate|String|2027-10-14|证书到期日期。
@@ -65,13 +66,13 @@
 |name|String|auto-test-23673|证书名称。
 
  |
-|orgName|String|Alibaba|证书所有组织名称。
+|orgName|String|Alibaba|购买证书的用户所属的公司或组织名称。
 
  |
-|province|String|Zhejiang|证书组织所在省。
+|province|String|Zhejiang|购买证书的用户所属的公司或组织所在的省。
 
  |
-|sans|String|\*.com|证书中sans部分。
+|sans|String|\*.com|证书绑定的所有域名。
 
  |
 |startDate|String|2017-10-16|证书签发日期。
