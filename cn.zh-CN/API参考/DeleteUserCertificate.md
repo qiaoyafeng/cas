@@ -1,8 +1,6 @@
 # DeleteUserCertificate {#doc_api_cas_DeleteUserCertificate .reference}
 
-删除用户证书。
-
-调用本接口删除用户的证书文件。
+调用DeleteUserCertificate接口删除用户的证书文件。
 
 ## 调试 {#api_explorer .section}
 
@@ -15,10 +13,13 @@
 |Action|String|是|DeleteUserCertificate|系统规定参数。取值：DeleteUserCertificate。
 
  |
-|CertId|Long|是|123|指定证书ID。调用**CreateUserCertificate**接口添加证书返回结果中的**CertId**。
+|CertId|Long|是|111111|指定证书ID。调用**CreateUserCertificate**接口添加证书返回结果中的**CertId**。
 
  |
-|Lang|String|否|ZH|指定请求和接收消息的语言类型。
+|Lang|String|否|zh|指定请求和接收消息的语言类型。
+
+ -   **zh**：中文
+-   **en**：英文
 
  |
 |SourceIp|String|否|1.2.3.4|指定请求的来源IP地址。
@@ -29,7 +30,7 @@
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|RequestId|String|BDXX|返回请求消息的ID。
+|RequestId|String|BDB81BA2-E1F5-4D08-A2DD-4BE2BF44C90E|返回结果的请求ID。
 
  |
 
