@@ -20,6 +20,9 @@
  |
 |Lang|String|否|zh|请求和接收消息的语言类型。
 
+ -   **zh**：中文
+-   **en**：英文
+
  |
 |SourceIp|String|否|1.2.3.4|请求的来源IP地址。
 
@@ -35,13 +38,13 @@
 |Cert|String|-----BEGIN CERTIFICATE----- MIIF...... -----END CERTIFICATE-----|证书内容，为PEM编码格式。
 
  |
-|City|String|hangzhou|证书组织所在城市。
+|City|String|hangzhou|购买证书的用户所属的公司或组织所在的城市。
 
  |
-|Common|String|\*.com|证书的CN属性。
+|Common|String|\*.com|证书绑定的主域名。
 
  |
-|Country|String|Chinese|证书组织所在国家。
+|Country|String|Chinese|购买证书的用户所属的公司或组织所在的国家。
 
  |
 |EndDate|String|2020-07-13|证书到期日期。
@@ -56,7 +59,7 @@
 |Id|Long|1|证书ID。
 
  |
-|Issuer|String|Alibaba|证书颁发机构。
+|Issuer|String|Digicert|证书颁发机构。
 
  |
 |Key|String|-----BEGIN RSA PRIVATE KEY----- MII.... -----END RSA PRIVATE KEY-----|证书私钥内容，为PEM编码格式。
@@ -65,16 +68,16 @@
 |Name|String|cert-1|证书名称。
 
  |
-|OrgName|String|Alibaba|证书所有组织名称。
+|OrgName|String|Alibaba|购买证书的用户所属的公司或组织名称。
 
  |
-|Province|String|zhejiang|证书组织所在省。
+|Province|String|zhejiang|购买证书的用户所属的公司或组织所在的省。
 
  |
-|RequestId|String|123|请求消息的ID。
+|RequestId|String|08F45EA0-66A7-4504-9B31-3589F5CE308D|请求消息的ID。
 
  |
-|Sans|String|\*.com|证书中sans部分。
+|Sans|String|\*.com|证书绑定的所有域名。
 
  |
 |StartDate|String|2018-07-13|证书签发日期。
