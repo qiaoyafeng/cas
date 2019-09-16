@@ -1,8 +1,6 @@
 # DescribeDVOrderResult {#doc_api_cas_DescribeDVOrderResult .reference}
 
-查询DV订单。
-
-调用本接口查询DV订单信息。
+调用DescribeDVOrderResult接口查询DV订单的详细信息。
 
 ## 调试 {#api_explorer .section}
 
@@ -15,10 +13,13 @@
 |Action|String|是|DescribeDVOrderResult|系统规定参数。取值：DescribeDVOrderResult。
 
  |
-|InstanceId|String|是|cas-cn-mpXX|指定证书实例。
+|InstanceId|String|是|cas-cn-\*\*\*|指定证书实例。
 
  |
-|Lang|String|否|ZH|指定请求和接收消息的语言类型。
+|Lang|String|否|zh|指定请求和接收消息的语言类型。
+
+ -   **zh**：中文
+-   **en**：英文
 
  |
 |SourceIp|String|否|1.2.3.4|指定请求的来源IP地址。
@@ -67,7 +68,7 @@
  **说明：** 仅在**OrderStatus**为**issued**时，该参数出现。
 
  |
-|RequestId|String|EECA10D5-BD0....|请求消息的ID。
+|RequestId|String|EECA10D5-BD0....|返回结果的请求ID。
 
  |
 
@@ -92,7 +93,7 @@ http(s)://[Endpoint]/?Action=DescribeDVOrderResult
 	  <OrderStatus>checking</OrderStatus>
 	  <CheckType>DNS</CheckType>
 	  <RequestId>EECA10D5-BD0F-4EF1-B3EA-B4578E5C6F8E</RequestId>
-	  <CheckName>_dnsauth.aliyundns20181016.certificatestests.com</CheckName>
+	  <CheckName>***.aliyundns20181016.certificatestests.com</CheckName>
 </DescribeDVOrderResult>
 ```
 
@@ -104,7 +105,7 @@ http(s)://[Endpoint]/?Action=DescribeDVOrderResult
 	"OrderStatus":"checking",
 	"CheckType":"DNS",
 	"RequestId":"EECA10D5-BD0F-4EF1-B3EA-B4578E5C6F8E",
-	"CheckName":"_dnsauth.aliyundns20181016.certificatestests.com"
+	"CheckName":"***.aliyundns20181016.certificatestests.com"
 }
 ```
 
