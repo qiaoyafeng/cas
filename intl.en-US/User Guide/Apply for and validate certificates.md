@@ -28,7 +28,7 @@ After purchasing a certificate, you need to go through the certificate applicati
 
         **Note:** We recommend that you select **Automatic** for **CSR Generation**. If not, your certificate may fail to be pushed to the specified Alibaba Cloud product.
 
-    -   **Manual:** Your CSR file is manually generated and you need to copy its content to the **CSR File** dialog box. For more information, see [How to generate a CSR file](https://help.aliyun.com/knowledge_detail/42218.html).
+    -   **Manual:** Your CSR file is manually generated and you need to copy its content to the **CSR File** dialog box. For more information, see [../DNcas1816450/EN-US\_TP\_13600.dita\#concept\_b4f\_mrp\_ydb](../DNcas1816450/EN-US_TP_13600.dita#concept_b4f_mrp_ydb).
 
         **Note:** The manually generated CSR file cannot be pushed to the specified Alibaba Cloud product with one click.
 
