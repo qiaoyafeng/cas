@@ -4,7 +4,7 @@ This article describes how to choose and purchase SSL certificate, and the featu
 
 1.  Log on to the [Alibaba Cloud Certificates purchase page](https://common-buy-intl.aliyun.com/?commodityCode=cas_intl#/buy) to purchase an SSL certificate.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13566/15688866274188_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13566/15688866454188_en-US.png)
 
 2.  Select the digital certificate and make the payment to enter the certificate configuration process.
 
