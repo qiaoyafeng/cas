@@ -7,16 +7,16 @@ After the SSL certificate is purchased and paid for, you must enter detailed inf
 1.  Log on to the Alibaba Cloud [SSL Certificates console](https://partners-intl.console.aliyun.com/#/cas).
 2.  In the Alibaba Cloud SSL Certificates console, click **Apply** in the lower-right corner of a certificate on the Order page. Open the Application page, and then enter the information of the applicant.
 
-    ![](images/33390_en-US.png)
+    ![填写申请](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13567/156896139833390_en-US.png)
 
-    **Note:** **Domains to Bind:** click the question mark icon after the field to view tips for adding domain names. Enter your domain names according to the tips.
+    **Note:** 
 
-    ![](images/33396_en-US.png)
+    -   **Domains to Bind**: click the question mark icon after the field to view tips for adding domain names. Enter your domain names according to the tips.
 
-    **Note:** Make sure that the **Company Phone** and **Applicant‘s Phone** are correct. The CA may call the number to confirm the related verification information.
+        ![域名](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13567/156896139833396_en-US.png)
 
-    **Note:** We recommend that you set the **CSR Generation** method to Automatic. Otherwise, you may fail to deploy your certificates to Alibaba Cloud products.
-
+    -   **Company Phone**/**Applicant's Phone**: Make sure that the **Company Phone** and **Applicant‘s Phone** are correct. The CA may call the number to confirm the related verification information.
+    -   **CSR Generation**: We recommend that you set the **CSR Generation** method to Automatic. Otherwise, you may fail to deploy your certificates to Alibaba Cloud products.
 3.  After you enter the information, click **Next** to go to the certificate **Verification Information** page.
 4.  Complete the following verification procedures.
     1.  Download and print the verification file template.
@@ -35,5 +35,5 @@ If the verification fails, the reason for the failure will be described in your 
 
 **Note:** After receiving your submission, the CA will send you a verification email. You must follow these steps to complete the domain name verification. If you do not complete the domain name verification, you will not be able to pass the certificate verification and your certificate application will remain in the **Verifying** state.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13567/15688866626087_en-US.jpg)
+![验证流程](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13567/15689613986087_en-US.jpg)
 
