@@ -56,3 +56,9 @@ In the **Unissued Certificates** area of the SSL Certificates page, you can see 
 
 **Note:** To modify your application information, you must withdraw the application and modify the information **before the certificate is issued**. The application cannot be withdrawn after the certificate is issued.
 
+## Related {#section_d1l_ba8_s0c .section}
+
+[What do I need to do after I submit a certificate verification request?](../../../../reseller.en-US/FAQ/SSL certificate application review/What do I need to do after I submit a certificate verification request?.md#)
+
+[What do I do if my certificate order remains in the review stage for a long time](../../../../reseller.en-US/FAQ/SSL certificate application review/What do I do if my certificate order remains in the review stage for a long time?.md#)
+
