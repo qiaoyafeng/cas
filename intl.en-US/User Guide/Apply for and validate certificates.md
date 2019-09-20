@@ -40,6 +40,8 @@ After purchasing a certificate, you need to go through the certificate applicati
 
 After entering all the required certificate application information, you need to upload the verification file.
 
+![验证](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65314/156897222333408_en-US.png)
+
 1.  Follow the instructions on the **Apply for Certificate** page. Verification information varies with certificate types.
 
     **Note:** 
